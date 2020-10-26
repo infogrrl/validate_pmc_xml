@@ -28,13 +28,13 @@ def main():
 
     # Path to folder of XML to validate
     xml_folder = Path(args.xml_folder)
-    print("Validating XML in '{}.'".format(xml_folder)
+    print("Validating XML in '{}.'".format(xml_folder))
 
     if args.output_dir:
         errors_dir = Path(args.output_dir)
     else:
         errors_dir = xml_folder / (str(xml_folder.stem) + "_ERRORS.csv")
-    print("Validation errors will be exported to .csv at `{}`.".format(errors_dir)
+    print("Validation errors will be exported to .csv at `{}`.".format(errors_dir))
 
     parser = etree.XMLParser()
     p = xml_folder.glob('*.xml')
