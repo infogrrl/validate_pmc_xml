@@ -18,4 +18,4 @@ The only required argument is the path to the directory (folder) on your local c
 
 By default, the error output will be saved to a CSV file within the specified `xml_folder` directory.  The filename will be the name of the XML directory with `_ERRORS.csv` appended to the end.  There is an additional optional flag you can pass, `--output_dir` which allows you to override this default behavior and tell the computer explicitly where to save the errors CSV file.
 
-```python validate_pmc_xml.py /XML/FOLDER/ /home/desktop/errors_date_batch.csv```
+```python validate_pmc_xml.py /XML/FOLDER/ --output_dir /home/desktop/errors_date_batch.csv```
